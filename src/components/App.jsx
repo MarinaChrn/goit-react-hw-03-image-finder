@@ -5,11 +5,13 @@ export class App extends Component{
   state={
     value: ''
   }
-  
+
   handleSubmit = value =>{
     this.setState({value: value})
     console.log(value)
   }
+
+  
 
   render() {
     return (
