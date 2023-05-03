@@ -1,4 +1,5 @@
 import { Component } from "react";
+import ImageGallery from "./imageGallery/ImageGallery";
 import { Searchbar } from "./searchbar/Searchbar";
 
 export class App extends Component{
@@ -17,6 +18,7 @@ export class App extends Component{
     return (
       <div>
         <Searchbar onSubmit={this.handleSubmit}/>
+        <ImageGallery value={this.state.value}/>
       </div>
     );
   }
